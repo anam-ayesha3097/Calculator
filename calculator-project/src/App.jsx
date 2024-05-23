@@ -34,7 +34,7 @@ function reducer(state, { type, payload }){
     
         case ACTIONS.CLEAR :
           //Empty State
-          return { }
+          return {}
 
         case ACTIONS.CHOOSE_OPERATION: 
 
@@ -89,7 +89,6 @@ function reducer(state, { type, payload }){
               currentOperand: null
             }
           }
-
           return{
             ...state,
             currentOperand:  state.currentOperand.slice(0, -1) //removes the last digit from the current operand
